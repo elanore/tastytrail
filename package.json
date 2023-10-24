@@ -1,0 +1,25 @@
+{
+  "name": "tastytrail",
+  "version": "1.0.0",
+  "description": "learning react",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elanore/tastytrail.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Shiny Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elanore/tastytrail/issues"
+  },
+  "homepage": "https://github.com/elanore/tastytrail#readme",
+  "devDependencies": {
+    "parcel": "^2.10.0"
+  }
+}
