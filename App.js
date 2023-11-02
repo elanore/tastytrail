@@ -1,4 +1,8 @@
-   /*
+import React from "react";
+import ReactDOM  from "react-dom/client"; 
+
+  
+  /*
 
    nesting in react 
    div>div>h1
