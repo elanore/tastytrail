@@ -2,7 +2,7 @@
   "name": "tastytrail",
   "version": "1.0.0",
   "description": "learning react",
-  "main": "App.js",
+  
   "scripts": {
     "test": "jest"
   },
@@ -20,11 +20,15 @@
   },
   "homepage": "https://github.com/elanore/tastytrail#readme",
   "devDependencies": {
-    "parcel": "^2.10.0",
+    "parcel": "^2.100",
     "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "browserslist":[
+    "last 2 Chrome versions",
+    "last 2 ff versions"
+]
 }
