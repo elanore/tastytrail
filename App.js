@@ -18,15 +18,36 @@ import ReactDOM  from "react-dom/client";
 
 */
 
-/
+const Header = () =>{
+    return (
+        <div className ="header">
+            <div className="logo-container">
+                <img 
+                className="logo"
+                src="https://cdn-icons-png.flaticon.com/512/187/187879.png" alt="logo"/>
+            </div>
+            <div className="nav-items">
+                <ul>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+        </div>
+    )
+
+
+}
+
+const AppLayout = () =>{
+    return (
+        <div className="app">
+            <Header/>
+
+        </div>
+    );
+}
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-//renders react element 
-//root.render(heading);
 
-//how to render components
-root.render(<Title/>);
-
-//notes
-// you cant call a const variable before initialisation
-// you can call a component inside element also
-//functional components are js functions so we can call it inside {} as a normal js function {Headingcomp1()}
+root.render(<AppLayout/>);
