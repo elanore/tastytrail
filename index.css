@@ -16,7 +16,7 @@
 
 .nav-items > ul {
   display: flex;
-  font-size: 24px;
+  font-size: 25px;
   list-style-type: none;
 }
 
@@ -44,11 +44,13 @@ body {
   height: 350px;
   padding: 5px;
   margin: 5px;
+  border: 1px solid #000;
 }
 
 .res-card:hover {
   border: 1px solid #000;
   cursor: pointer;
+  background-color: peachpuff;
 }
 
 .res-logo {
