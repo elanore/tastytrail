@@ -19,3 +19,8 @@ food ordering app layout
   -links
 
 \*/
+
+#react hooks - normal js utitilty function
+
+to remove cors error add plugin - allowcors -access control allow origins
+
