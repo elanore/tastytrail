@@ -18,7 +18,8 @@ const Body = () =>{
         );
 
         const json = await data.json();
-        console.log(json);
+        console.log("mydata",json);
+        //console.log (json.data.cards[4].card.card.restaurants[0])
     }
 
     return(
