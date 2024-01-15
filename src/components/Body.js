@@ -19,7 +19,7 @@ const Body = () =>{
 
         const json = await data.json();
         console.log("mydata",json);
-        //console.log (json.data.cards[4].card.card.restaurants[0])
+        console.log (json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants[0])
     }
 
     return(
