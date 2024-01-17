@@ -7,7 +7,7 @@ import {useState,useEffect} from 'react';
 const Body = () =>{
 
     //local state variable
-    const [listofRestaurant,setlistofRestaurant] = useState(resList);
+    const [listofRestaurant,setlistofRestaurant] = useState([]);
 
     useEffect(()=>{
        fetchData();
@@ -18,10 +18,12 @@ const Body = () =>{
         );
 
         const json = await data.json();
-        setlistofRestaurant(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
+
+        //optional chaining 
+        setlistofRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
         //console.log("mydata",json);
         //console.log(json, "json data api");
-        console.log (json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants,"new data")
+        //console.log (json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants,"new data")
     }
 
     return(
