@@ -24,6 +24,9 @@ const Body = () =>{
         //console.log("mydata",json);
         //console.log(json, "json data api");
         //console.log (json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants,"new data")
+    };
+    if (listofRestaurant.length === 0) {
+        return <h1>Loading ...</h1>
     }
 
     return(
