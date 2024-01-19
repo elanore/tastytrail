@@ -62,3 +62,14 @@ body {
   cursor: pointer;
   background-color: rgb(224, 153, 90);
 }
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shimmer-card {
+  width: 180px;
+  height: 400px;
+  background-color: rgb(235, 230, 230);
+  margin: 10px;
+}

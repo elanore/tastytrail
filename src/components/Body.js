@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import resList from "../utils/mockData";
 import {useState,useEffect} from 'react';
+import Shimmer from "./Shimmer";
 
 
 
@@ -25,8 +26,9 @@ const Body = () =>{
         //console.log(json, "json data api");
         //console.log (json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants,"new data")
     };
+    //shimmer ui
     if (listofRestaurant.length === 0) {
-        return <h1>Loading ...</h1>
+        return <Shimmer/>;
     }
 
     return(
