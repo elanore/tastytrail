@@ -27,11 +27,13 @@ const Body = () =>{
         //console.log (json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants,"new data")
     };
     //shimmer ui
-    if (listofRestaurant.length === 0) {
-        return <Shimmer/>;
-    }
+    //if (listofRestaurant.length === 0) {
+     //   return <Shimmer/>;
+    //}
 
-    return(
+
+    //conditional rendering with ternary operator
+    return listofRestaurant.length === 0 ? <Shimmer/> :(
         <div className="body">
             <div className="filter">
                 <button 
