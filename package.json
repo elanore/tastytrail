@@ -2,7 +2,6 @@
   "name": "tastytrail",
   "version": "1.0.0",
   "description": "learning react",
-  
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -27,10 +26,11 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.3"
   },
-  "browserslist":[
+  "browserslist": [
     "last 2 Chrome versions",
     "last 2 ff versions"
-]
+  ]
 }

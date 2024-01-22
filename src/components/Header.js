@@ -21,7 +21,7 @@ const [btnlogin, setBtnlogin] =useState("Login");
                     <li>Contact us</li>
                     <li>Cart</li>
                     <button className="login"
-                    onClick={()=> {
+                    onClick={()=> { 
                         btnlogin === "Login" ?setBtnlogin("Logout") :setBtnlogin("Login");
                         //console.log("btnName");
                     }}
