@@ -73,4 +73,9 @@ body {
   background-color: rgb(235, 230, 230);
   margin: 10px;
 }
-
+.login {
+  cursor: pointer;
+  padding: 0 15px;
+  background-color: darksalmon;
+  
+}
