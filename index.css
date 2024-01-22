@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  border: 2px solid grey;
+  border: 1px solid grey;
 }
 
 .logo {
@@ -26,12 +26,10 @@
 }
 
 body {
-  border: 1px solid #000;
 }
 
 .search {
   padding: 10px;
-  border: 1px solid black;
 }
 
 .res-container {
@@ -41,7 +39,6 @@ body {
 
 .res-card {
   width: 180px;
-
   padding: 5px;
   margin: 5px;
   border: 1px solid #000;
@@ -60,7 +57,7 @@ body {
 .filter-btn {
   margin: 10px;
   cursor: pointer;
-  background-color: rgb(224, 153, 90);
+  background-color: rgb(241, 239, 236);
 }
 
 .shimmer-container {
@@ -76,6 +73,8 @@ body {
 .login {
   cursor: pointer;
   padding: 0 15px;
-  background-color: darksalmon;
-  
+  background-color: daksalmon;
+}
+.filter{
+  display: flex;
 }
