@@ -2,7 +2,7 @@ const About =()=>{
     return (
         <div>
             <h1>About us</h1>
-            <p>Lorem ipsum</p>
+            <p>Find more about us here !!</p>
         </div>
     );
 };
