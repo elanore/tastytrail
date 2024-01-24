@@ -18,12 +18,15 @@ const fetchMenu = async () =>{
     //console.log(json.data.cards[0].card.card.info);
     setresInfo(json.data);
 
-    const { itemCards } = resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards[1].card.card;
-    console.log(itemCards[0].card.info)
-   console.log(itemCards,"item");
+    
    
 };
 if(resInfo ===null) return <Shimmer/>;
+
+
+//destructuring data for menu items
+const { itemCards } = resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards[1].card.card;
+    
 
 //destructure data for name ,cuisines avgRating
 const {name, cuisines, costForTwoMessage, avgRating}  = resInfo?.cards[0]?.card?.card?.info;
