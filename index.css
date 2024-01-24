@@ -75,6 +75,10 @@ body {
   padding: 0 15px;
   background-color: daksalmon;
 }
-.filter{
+.filter {
   display: flex;
+}
+.user-card {
+  padding: 10px;
+  border: 1px solid black;
 }
