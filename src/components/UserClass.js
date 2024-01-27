@@ -31,11 +31,21 @@ console.log("child constructor");
          console.log(json, "about us data");
 
     }
+
+    componentDidUpdate(){
+        console.log("did update");
+    }
+
+    componentWillUnmount(){
+
+        console.log("unmounting the componenent");
+    }
     //react.component is a class given by react 
     render(){
 
        console.log("child render");
        const {name,location,avatar_url} = this.state.userInfo;
+       
 
 
         //render method returns a jsx which is displayed in ui
@@ -45,7 +55,6 @@ console.log("child constructor");
             <h2>Name : {name}</h2>
             <h3>Location: {location}</h3>
             <h4>Contact : www.linkedIn/shiny-joseph</h4>
-
             <img src= {avatar_url}/>
         </div>
     );
