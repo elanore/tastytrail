@@ -58,14 +58,14 @@ const Body = () =>{
     return listofRestaurant.length === 0 ? <Shimmer/> :(
         <div className="body">
             <div className="filter">
-                <div className="search">
-                    <input type="text" className="search-box" value={searchText} 
+                <div className="search m-4 p-4">
+                    <input type="text" className="border border-solid border-black" value={searchText} 
                     onChange={(e)=> {
                         setSearchText(e.target.value);
 
                         }}
                     />
-                    <button onClick={()=>{
+                    <button className= "px-4  py-2 bg-green-100 m-4" onClick={()=>{
 
                         const filteredRestaurant= listofRestaurant.filter(
                             (res)=> res.info.name.toLowerCase().includes(searchText.toLowerCase()) );
