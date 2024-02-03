@@ -6,7 +6,7 @@ const RestaurantCard = (props) =>{
     //console.log(props);
 
     return (
-        <div className="m-4 p-4 w-[250px] bg-red-200 rounded-lg" /*style={{backgroundColor: "#f0f0f0"}}*/>
+        <div className="m-4 p-4 w-[250px] rounded-lg bg-red-200 hover:bg-red-300" /*style={{backgroundColor: "#f0f0f0"}}*/>
             <img 
             className=" rounded-lg"
             alt="alternate image"
