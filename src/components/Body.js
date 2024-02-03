@@ -42,30 +42,24 @@ const Body = () =>{
     
     <h1>Looks like you are offline !!!</h1>
     );
-
-
-
-
-
-
     //shimmer ui
     //if (listofRestaurant.length === 0) {
      //   return <Shimmer/>;
     //}
-
-
     //conditional rendering with ternary operator
     return listofRestaurant.length === 0 ? <Shimmer/> :(
         <div className="body">
-            <div className="filter">
+            <div className="filter flex">
                 <div className="search m-4 p-4">
-                    <input type="text" className="border border-solid border-black" value={searchText} 
+                    <input type="text" 
+                    className="border border-solid border-black" 
+                    value={searchText} 
                     onChange={(e)=> {
                         setSearchText(e.target.value);
-
-                        }}
+                    }}
                     />
-                    <button className= "px-4  py-2 bg-green-100 m-4" onClick={()=>{
+                    <button className= "px-4  py-2 bg-blue-100 m-4 rounded-lg" 
+                    onClick={()=>{
 
                         const filteredRestaurant= listofRestaurant.filter(
                             (res)=> res.info.name.toLowerCase().includes(searchText.toLowerCase()) );
@@ -77,13 +71,14 @@ const Body = () =>{
                         Search
                     </button>
                 </div>
-                <button 
-                className="filter-btn" 
+                <div className="m-4 p-4 flex items-center">
+                    <button 
+                className="px-4 py-2 bg-gray-100 rounded-lg" 
                 onClick={()=>{
                     
                   
                     const filteredList = listofRestaurant.filter(
-                        (res)=>res.info.avgRating > 4.4
+                        (res)=>res.info.avgRating > 4
                         );
                         console.log(listofRestaurant);
                         setlistofRestaurant(filteredList);
@@ -91,8 +86,9 @@ const Body = () =>{
                 >
                     Top Rated Restaurants
                 </button>
+                </div>
              </div>
-            <div className="res-container">
+            <div className="flex flex-wrap">
                 {
                     filteredRestaurant.map((restaurant)=>
                     (

@@ -12,8 +12,8 @@ const onlineStatus = useOnlineStatus();
 
 
     return (
-        <div className ="flex justify-between bg-pink-300 shadow-sm">
-            <div className="bg-red-700 border border-solid ">
+        <div className ="flex justify-between bg-pink-100 shadow-sm mb-2">
+            <div className="bg-red-700 border border-solid">
                 <img 
                 className="w-24"
                 src={LOGO_URL} alt="logo"/>
