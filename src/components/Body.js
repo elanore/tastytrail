@@ -78,7 +78,7 @@ const Body = () =>{
                     
                   
                     const filteredList = listofRestaurant.filter(
-                        (res)=>res.info.avgRating > 4
+                        (res)=>res.info.avgRating > 4.2
                         );
                         console.log(listofRestaurant);
                         setlistofRestaurant(filteredList);
