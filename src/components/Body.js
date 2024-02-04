@@ -14,7 +14,7 @@ const Body = () =>{
     const[filteredRestaurant,setfilteredRestaurant] = useState([]);
     const [searchText,setSearchText] =useState("");
 
-    console.log(filteredRestaurant,"list of filtered restaurant");
+    //console.log(filteredRestaurant,"list of filtered restaurant");
 
     const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
@@ -34,7 +34,8 @@ const Body = () =>{
         setfilteredRestaurant(
             json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
             );
-        //console.log (json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants,"new data")
+        console.log (json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants,"new data")
+        //console.log (json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants.aggregatedDiscountInfoV3.discountTag,"new data discount")
     };
 
     const onlineStatus = useOnlineStatus();
@@ -76,15 +77,18 @@ const Body = () =>{
                 </div>
              </div>
             <div className="flex flex-wrap">
+                
                 {
                     filteredRestaurant.map((restaurant)=>
                     (
                     <Link key={restaurant.info.id} 
                     to={"/restuarants/"+restaurant.info.id}>
                         {/**  Promoted Restaurant */
-                            restaurant.info.promoted ? <RestaurantCardPromoted resData={restaurant}/> :
+                            restaurant.info.aggregatedDiscountInfoV3.discountTag ? <RestaurantCardPromoted resData={restaurant}/> :
                             <RestaurantCard resData={restaurant}/>
-                        }
+
+                        }{console.log(restaurant.info.aggregatedDiscountInfoV3.discountTag,"info")
+                    }
                     </Link>
                     ))}
             </div>
