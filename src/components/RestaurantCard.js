@@ -24,7 +24,7 @@ const RestaurantCard = (props) =>{
 };
 
 
-//higher order component
+//higher order component - pure functions its only enhances the exisiting card it wont change the input component
 //takes input as res card and output will be res card promoted
 
 export const withPromotedLabel = (RestaurantCard) =>{

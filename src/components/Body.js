@@ -84,11 +84,11 @@ const Body = () =>{
                     <Link key={restaurant.info.id} 
                     to={"/restuarants/"+restaurant.info.id}>
                         {/**  Promoted Restaurant */
-                            restaurant.info.aggregatedDiscountInfoV3.discountTag ? <RestaurantCardPromoted resData={restaurant}/> :
+                            restaurant?.info?.aggregatedDiscountInfoV3?.discountTag ? <RestaurantCardPromoted resData={restaurant}/> :
                             <RestaurantCard resData={restaurant}/>
 
-                        }{console.log(restaurant.info.aggregatedDiscountInfoV3.discountTag,"info")
-                    }
+                        }
+                    
                     </Link>
                     ))}
             </div>
