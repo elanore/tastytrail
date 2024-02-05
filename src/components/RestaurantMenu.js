@@ -41,7 +41,7 @@ resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
             <h2>Menu</h2>
              {/**build accordion menu */}
              {categories.map((category)=>(
-             <RestaurantCategory data = {category?.card?.card}/>
+             <RestaurantCategory  key = { category.card.card.title} data = {category?.card?.card}/>
              ))}
         </div>
     );
