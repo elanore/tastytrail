@@ -42,7 +42,7 @@ console.log(cartItems);
                     </li>
                     <li className="px-4">
                         <Link to="/cart">
-                            cart 🛒({cartItems.length} items)
+                            cart 🛒 - ({cartItems.length} items)
                         </Link>
                     </li>
                     <li className="px-4">
