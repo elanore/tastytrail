@@ -24,3 +24,11 @@ food ordering app layout
 
 to remove cors error add plugin - allowcors -access control allow origins
 
+#redux
+ - install @reduxj/toolkit and react redux
+ - build store
+ - connect store to app
+ - create slice - for cart 
+ - dispatch action 
+ - read data using selector
+ 
