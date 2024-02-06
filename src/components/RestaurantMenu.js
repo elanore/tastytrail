@@ -10,8 +10,13 @@ const RestaurantMenu = ()=>{
     //console.log(resId,"params");
     const resInfo = useRestaurantMenu(resId);
 
+    const [showIndex,setShowIndex] = useState(0);
+
+    const dummy = "Dummy Data";
+
     //shimmer
 if(resInfo ===null) return <Shimmer/>;
+
 
 
   
@@ -40,8 +45,15 @@ resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
             <h3>{avgRating}</h3>
             <h2>Menu</h2>
              {/**build accordion menu */}
-             {categories.map((category)=>(
-             <RestaurantCategory  key = { category.card.card.title} data = {category?.card?.card}/>
+             {categories.map((category,index)=>(
+                 //controlled componenent
+             <RestaurantCategory  
+             key = { category.card.card.title} 
+             data = {category?.card?.card}
+             showItems={index === showIndex ? true : false}
+             setShowIndex = {() => setShowIndex(index)}
+             dummy = {dummy}
+             />
              ))}
         </div>
     );
