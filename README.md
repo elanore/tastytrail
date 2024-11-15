@@ -1,6 +1,6 @@
 # tastytrail
 
-React learning
+React learning Project
 
 food ordering app layout
 
